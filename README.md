@@ -11,12 +11,12 @@ The original repository was initially removed by its creator and subsequently ta
 Install in package.json:
 ```json
 "dependencies": {
-    "baileys": "github:nstar-y/bail"
+    "baileys": "github:ibad1805/baileys"
 }
 ```
 or install in terminal:
 ```
-npm install baileys@github:nstar-y/bail
+npm install baileys@github:ibad1805/baileys
 ```
 
 Then import the default function in your code:
@@ -289,7 +289,7 @@ await sock.sendMessage(id, { text: "Hello Wold", ai: true })
 ```ts
 if(usePairingCode && !sock.authState.creds.registered) {
     const phoneNumber = await question('Please enter your mobile phone number:\n')
-    const custom = "NSTRCODE" // must be 8 digits, can be letters or numbers
+    const custom = "IBADCODE" // must be 8 digits, can be letters or numbers
     const code = await sock.requestPairingCode(phoneNumber, custom)
     console.log(`Pairing code: ${code?.match(/.{1,4}/g)?.join('-') || code}`)
 }
